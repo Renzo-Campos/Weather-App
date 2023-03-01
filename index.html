@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css" type="text/css">
+  
+  <title>Weather App</title>
+</head>
+<body id="body" onload="onLoad()">
+  <main class="container" id="container">
+    <div class="primary-info-weather">
+      <div class="location-container">
+        <div class="date" id="date"></div>
+        <div class="location" id="location"></div>
+      </div>
+      <div class="description-container">
+        <img class="img-icon" id="icon" src="./assets/storm-icon.svg" alt="wheater icon">
+        <div class="description" id="description"></div>
+      </div>
+    </div>
+    <div class="secondary-info-weather">
+      <div class="container-up">
+        <div class="temperature">
+          <div id="temperature"></div>
+          <p>Temperature</p>          
+        </div>
+        <div class="feelsLike">
+          <div id="feelsLike"></div>
+          <p>Feels Like</p>
+        </div>
+      </div>
+      <div class="container-low">
+        <div class="humidity">
+          <img class="humidity-img" src="./assets/prints.png" alt="humedity">
+          <div id="humidity"></div>
+          <p>humedity</p></div>
+        <div class="pressure">
+          <img class="pressure-img" src="./assets/windshield.png" alt="pressure">
+          <div id="pressure"></div>
+          <p>pressure</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div id="loader" class="loader">Loading...</div>
+  <script src="weather.js"></script>
+</body>
+</html>
